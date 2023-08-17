@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header--navigation {
+}
+html{
+    scroll-behavior: smooth;
+
+
+}
+/* .modal{
+    border:2px solid blue;
+    height:100vh;
+    background-color: red;
+} */
+
+.fluid{
+    border:2px solid green;
+}
