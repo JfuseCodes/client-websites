@@ -65,31 +65,29 @@ export const Image = ({src}) => {
 
 export const ContactForm = () => {
     const [state, handleSubmit] = useForm('mzblelzd');
-    if(state.succeeded) return <h1 className='text-5xl text-center md:w-1/2'>Thanks, I will get back to you shortly!</h1>
+    if(state.succeeded) <h1 className='text-12 text-center md:text-4xl md:w-1/2 font-black mt-12 md:mt-24'>Thank you for choosing me to be your makeup artist, I will get back to you shortly!</h1>
 
-    // return(
-    //     <form className='flex flex-col md:flex-col md:w-1/2 mt-12' onSubmit={handleSubmit}>
-            
-    //         <input className='h-12 rounded-full border-[.5px] border-b-[3px] border-r-[3px] border-solid border-[#1E1E1E] mb-4 pl-6' placeholder='*Your name' type="text" id='full-name' name='full-name' />
-    //         <input className='h-12 rounded-full border-[.5px] border-b-[3px] border-r-[3px] border-solid border-[#1E1E1E] mb-4 pl-6' placeholder='*Your email' id='email' type='email' name='email' />
-    //         <ValidationError 
-    //             prefix='Email'
-    //             field='email'
-    //             errors={state.errors}
-    //         />
-    //         <textarea className='rounded-3xl border-[.5px] border-b-[3px] border-r-[3px] border-solid border-[#1E1E1E] mb-4 pl-6 pt-6' placeholder='*How can I help?' id='message' name='message' cols="30" rows="10" rows="5">
-
-    //         </textarea>
-    //         <ValidationError 
-    //             prefix='Message'
-    //             field='message'
-    //             errors={state.errors}
-    //         />
-    //         <button className='bg-[#f9d07e] opacity-100 font-bold w-full max-w-[475px] sm:w-[210px] h-12 rounded-full border-[.5px] border-b-[3px] border-r-[3px] border-solid border-[#1E1E1E] hover:shadow-button hover:-translate-y-2 hover:-translate-x-2 ease-in-out duration-300 lg:w-52'  type='submit' disabled={state.submitting}>Message Me</button>
-    //     </form>
-    // )
     return(
-        <h1 className='text-12 text-center md:text-4xl md:w-1/2 font-black mt-12 md:mt-24'>Thank you for choosing me to be your makeup artist, I will get back to you shortly!</h1>
+        <form className='flex flex-col md:flex-col md:w-1/2 mt-12' onSubmit={handleSubmit}>
+            
+            <input className='h-12 rounded-full border-[.5px] border-b-[3px] border-r-[3px] border-solid border-[#1E1E1E] mb-4 pl-6' placeholder='*Your name' type="text" id='full-name' name='full-name' />
+            <input className='h-12 rounded-full border-[.5px] border-b-[3px] border-r-[3px] border-solid border-[#1E1E1E] mb-4 pl-6' placeholder='*Your email' id='email' type='email' name='email' />
+            <ValidationError 
+                prefix='Email'
+                field='email'
+                errors={state.errors}
+            />
+            <textarea className='rounded-3xl border-[.5px] border-b-[3px] border-r-[3px] border-solid border-[#1E1E1E] mb-4 pl-6 pt-6' placeholder='*How can I help?' id='message' name='message' cols="30" rows="10" rows="5">
+
+            </textarea>
+            <ValidationError 
+                prefix='Message'
+                field='message'
+                errors={state.errors}
+            />
+            <button className='bg-[#f9d07e] opacity-100 font-bold w-full max-w-[475px] sm:w-[210px] h-12 rounded-full border-[.5px] border-b-[3px] border-r-[3px] border-solid border-[#1E1E1E] hover:shadow-button hover:-translate-y-2 hover:-translate-x-2 ease-in-out duration-300 lg:w-52'  type='submit' disabled={state.submitting}>Message Me</button>
+        </form>
     )
+ 
 }
 

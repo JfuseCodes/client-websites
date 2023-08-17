@@ -3,7 +3,7 @@ import data from "../sub_components/data"
 
 export default function FeaturedLooks(){
     return(
-        <section className='mt-24 mb-20 mx-auto'>
+        <section id='featured_looks' className='mt-24 mb-20 mx-auto'>
             <div className='fluid'>
                 <h1 className='text-5xl font-black text-center mb-12'>Featured Looks</h1>
             {

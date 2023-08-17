@@ -1,6 +1,6 @@
 export default function AboutMe(){
     return(
-        <section className='px-6 w-full mx-auto max-w-6xl lg:px-10'>
+        <section id='about_me' className='px-6 w-full mx-auto max-w-6xl lg:px-10'>
             <h1 className='mb-16 text-5xl font-black text-center'>About Me</h1>
             <div className='text-xl'>
                 <p className='my-4'>Kamusta? Ako si Juday isang professional makeup artist sa bansang tinaguriang “happiest country in the world, Philippines!Bata pa lang ako nasa puso ko na ang humawak ng mga makukulay na gamit, isa sa mga talentong nabihasa ko ay ang pagmamakeup. Nagsimula ‘to no’ng sinubukan akong ayusan ng aking pinsan at nakita ko na ang saya ng kulay ng nasa mukha ko. Hindi ko inaasahan na ang isang masasabi kong nakahiligan ko lang ay magiging bunga ng isang magandang talento.</p>

@@ -7,13 +7,13 @@ export default function ModalNav({modalLinkClick}) {
         <nav role='navigation'>
             <ul className='flex flex-col'>
                 <li>
-                   <a onClick={modalLinkClick} className='block py-4 text-center text-xl' href='#skills'>Skills</a>
+                   <a onClick={modalLinkClick} className='block py-4 text-center text-xl' href='#featured_looks'>Featured Looks</a>
                 </li>
                 <li>
-                    <a onClick={modalLinkClick} className='block py-4 text-center text-xl' href='#showcase'>Showcase</a>
+                    <a onClick={modalLinkClick} className='block py-4 text-center text-xl' href='#gallery'>Gallery</a>
                 </li>
                 <li>
-                    <a onClick={modalLinkClick} className='block py-4 text-center text-xl' href='#latest-Articles'>Latest Articles</a>
+                    <a onClick={modalLinkClick} className='block py-4 text-center text-xl' href='#about_me'>About Me</a>
                 </li>
             </ul>
         </nav>
