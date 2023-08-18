@@ -65,8 +65,11 @@ export const Image = ({src}) => {
 
 export const ContactForm = () => {
     const [state, handleSubmit] = useForm('mzblelzd');
-    if(state.succeeded) <h1 className='text-12 text-center md:text-4xl md:w-1/2 font-black mt-12 md:mt-24'>Thank you for choosing me to be your makeup artist, I will get back to you shortly!</h1>
-
+    
+    if(state.succeeded) {
+        return (<h1 className='text-12 text-center md:text-4xl md:w-1/2 font-black mt-12 md:mt-24'>Thank you for choosing me to be your makeup artist, I will get back to you shortly!</h1>)
+    }
+    else
     return(
         <form className='flex flex-col md:flex-col md:w-1/2 mt-12' onSubmit={handleSubmit}>
             

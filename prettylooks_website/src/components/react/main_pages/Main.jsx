@@ -10,7 +10,7 @@ export default function Main() {
     
     return(
         <>
-            <main className='px-6 w-full mx-auto max-w-6xl lg:px-10'>
+            <main className='px-6 w-full mx-auto max-w-6xl lg:px-10' >
                 <Landing />
                 <Introduction />
             </main>
