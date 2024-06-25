@@ -39,7 +39,7 @@ export const Image = ({src}) => {
 
     return(
         <>
-            <img src={`./assets/gallery/fl${src}.jpeg`} alt="make up look" />
+            <img className='w-full h-full' src={`./assets/gallery/fl${src}.jpeg`} alt="make up look" />
 
         </>
     )
